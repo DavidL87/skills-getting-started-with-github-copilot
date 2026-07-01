@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button
                       type="button"
                       class="participant-remove"
-                      data-activity="${escapeHtml(name)}"
-                      data-email="${escapeHtml(participant)}"
+                      data-activity="${encodeURIComponent(name)}"
+                      data-email="${encodeURIComponent(participant)}"
                       title="Unregister participant"
                       aria-label="Unregister ${escapeHtml(participant)} from ${escapeHtml(name)}"
                     >
